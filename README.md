@@ -3,7 +3,7 @@ Conditional Variational Autoencoder Toy Example
 
 This is an implementation of a conditional variational autoencoder in Keras. The goal is to regress a green rectangle from small images containing two possible different shapes. It borrows from code found in https://github.com/nnormandin/Conditional_VAE, which is similar but based on the MNIST dataset. The goal of this is to test the efficacy of VAEs in regressing out arbitrary features of an image in an easily-verifiable way before applying the framework to more complex projects.
 
-The script contains code to generate and save 32x32 images that each have a 50% chance of containing a red ellipse and a 50% chance of containing a green rectangle, each of varying height and width (though these variations are only really apparent at large image dimensions -- in the current script settings they are essentially all the same). So, 25% of the generated images are just blank white images, and 25% contain both objects. The CVAE takes, as input, the images, as well as 10 labels that encode all information about the image (two bits indicating the presence of each shape, four indicating the coordinates of each shape, and four indicating the height and width of each shape). This project shows the results of setting the input label for the green rectangle from one to zero. The goal of this is to use a CVAE to regress out the green rectangle and leave the red ellipse unaffected.
+The script contains code to generate and save 32x32 images that each have a 50% chance of containing a red ellipse and a 50% chance of containing a green rectangle, each of varying height and width (though these variations are only really apparent at large image dimensions -- in the current script settings they are essentially all the same). So, 25% of the generated images are just blank white images, and 25% contain both objects. The CVAE takes, as input, the images, as well as 10 labels that encode all information about the image (two numbers indicating the presence of each shape, four indicating the coordinates of each shape, and four indicating the height and width of each shape). This project shows the results of setting the input label for the green rectangle from one to zero. The goal of this is to use a CVAE to regress out the green rectangle and leave the red ellipse unaffected.
 
 The script main.py should do everything, including generation of the graphs of the latent space and sample GIF outputs, as well as saving the intermediate model.
 
@@ -31,6 +31,28 @@ Rectangle and ellipse:
 <kbd>![til](./gifs/im_0002.gif)</kbd> 
 <kbd>![alt text](./image_predictions/im_0002.png)</kbd> 
 
+<kbd>![til](./gifs/im_0005.gif)</kbd> 
+<kbd>![alt text](./image_predictions/im_0005.png)</kbd> 
+
+<kbd>![til](./gifs/im_0007.gif)</kbd> 
+<kbd>![alt text](./image_predictions/im_0007.png)</kbd> 
+
+<kbd>![til](./gifs/im_0010.gif)</kbd> 
+<kbd>![alt text](./image_predictions/im_0010.png)</kbd> 
+
+<kbd>![til](./gifs/im_0011.gif)</kbd> 
+<kbd>![alt text](./image_predictions/im_0011.png)</kbd> 
+
+<kbd>![til](./gifs/im_0015.gif)</kbd> 
+<kbd>![alt text](./image_predictions/im_0015.png)</kbd> 
+
+<kbd>![til](./gifs/im_0016.gif)</kbd> 
+<kbd>![alt text](./image_predictions/im_0016.png)</kbd> 
+
+<kbd>![til](./gifs/im_0017.gif)</kbd> 
+<kbd>![alt text](./image_predictions/im_0017.png)</kbd> 
+
+
 Just rectangle:
 
 <kbd>![til](./gifs/im_0004.gif)</kbd> 
@@ -38,6 +60,12 @@ Just rectangle:
 
 <kbd>![til](./gifs/im_0012.gif)</kbd> 
 <kbd>![alt text](./image_predictions/im_0012.png)</kbd> 
+
+<kbd>![til](./gifs/im_0014.gif)</kbd> 
+<kbd>![alt text](./image_predictions/im_0014.png)</kbd> 
+
+<kbd>![til](./gifs/im_0018.gif)</kbd> 
+<kbd>![alt text](./image_predictions/im_0018.png)</kbd> 
 
 Just ellipse:
 
