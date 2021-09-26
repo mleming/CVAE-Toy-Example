@@ -21,44 +21,36 @@ Some results visualized are as follows.
 Empty image:
 
 <kbd>![til](./gifs/im_0000.gif)</kbd>
-
 <kbd>![alt text](./image_predictions/im_0000.png)</kbd>
 
 Rectangle and ellipse:
 
 <kbd>![til](./gifs/im_0001.gif)</kbd> 
-
 <kbd>![alt text](./image_predictions/im_0001.png)</kbd> 
 
-<kbd>![til](./gifs/im_0016.gif)</kbd> 
-
-<kbd>![alt text](./image_predictions/im_0016.png)</kbd> 
+<kbd>![til](./gifs/im_0002.gif)</kbd> 
+<kbd>![alt text](./image_predictions/im_0002.png)</kbd> 
 
 Just rectangle:
 
 <kbd>![til](./gifs/im_0004.gif)</kbd> 
-
 <kbd>![alt text](./image_predictions/im_0004.png)</kbd> 
 
 <kbd>![til](./gifs/im_0012.gif)</kbd> 
-
 <kbd>![alt text](./image_predictions/im_0012.png)</kbd> 
 
 Just ellipse:
 
 <kbd>![til](./gifs/im_0003.gif)</kbd> 
-
 <kbd>![alt text](./image_predictions/im_0003.png)</kbd> 
 
 <kbd>![til](./gifs/im_0009.gif)</kbd> 
-
 <kbd>![alt text](./image_predictions/im_0009.png)</kbd> 
 
 
 Evolution of the latent space:
 
 <kbd>![til](./gifs/latent_space_plot.gif)</kbd> 
-
 <kbd>![alt text](./latent_space_plot.png)</kbd> 
 
 
