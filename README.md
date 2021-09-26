@@ -20,46 +20,46 @@ Some results visualized are as follows.
 
 Empty image:
 
-![til](./gifs/im_0000.gif)
+<kbd>![til](./gifs/im_0000.gif)</kbd>
 
-![alt text](./image_predictions/im_0000.png)
+<kbd>![alt text](./image_predictions/im_0000.png)</kbd>
 
 Rectangle and ellipse:
 
-![til](./gifs/im_0001.gif)
+<kbd>![til](./gifs/im_0001.gif)</kbd> 
 
-![alt text](./image_predictions/im_0001.png)
+<kbd>![alt text](./image_predictions/im_0001.png)</kbd> 
 
-![til](./gifs/im_0016.gif)
+<kbd>![til](./gifs/im_0016.gif)</kbd> 
 
-![alt text](./image_predictions/im_0016.png)
+<kbd>![alt text](./image_predictions/im_0016.png)</kbd> 
 
 Just rectangle:
 
-![til](./gifs/im_0004.gif)
+<kbd>![til](./gifs/im_0004.gif)</kbd> 
 
-![alt text](./image_predictions/im_0004.png)
+<kbd>![alt text](./image_predictions/im_0004.png)</kbd> 
 
-![til](./gifs/im_0012.gif)
+<kbd>![til](./gifs/im_0012.gif)</kbd> 
 
-![alt text](./image_predictions/im_0012.png)
+<kbd>![alt text](./image_predictions/im_0012.png)</kbd> 
 
 Just ellipse:
 
-![til](./gifs/im_0003.gif)
+<kbd>![til](./gifs/im_0003.gif)</kbd> 
 
-![alt text](./image_predictions/im_0003.png)
+<kbd>![alt text](./image_predictions/im_0003.png)</kbd> 
 
-![til](./gifs/im_0009.gif)
+<kbd>![til](./gifs/im_0009.gif)</kbd> 
 
-![alt text](./image_predictions/im_0009.png)
+<kbd>![alt text](./image_predictions/im_0009.png)</kbd> 
 
 
 Evolution of the latent space:
 
-![til](./gifs/latent_space_plot.gif)
+<kbd>![til](./gifs/latent_space_plot.gif)</kbd> 
 
-![alt text](./latent_space_plot.png)
+<kbd>![alt text](./latent_space_plot.png)</kbd> 
 
 
 Lessons learned from this project:
