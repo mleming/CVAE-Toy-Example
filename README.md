@@ -16,7 +16,7 @@ The following Python dependencies are required:
   * imageio
   * matplotlib
 
-Some results visualized are as follows.
+Some results visualized are as follows. In the three-latticed image, the image to the left is the input, the middle image is the prediction with correct labels in place, and the image to the right is the input with a false bit indicating that the green rectangle is not present. The GIF shows training every 100 epochs, while the still image shows the final output. If the network performs correctly, it should remove the green rectangle (if it is present) and leave the rest of the image unaffected.
 
 Empty image:
 
