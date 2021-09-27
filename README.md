@@ -63,9 +63,6 @@ Just rectangle:
 <kbd>![til](./gifs/im_00015.gif)</kbd> 
 <kbd>![alt text](./demo_image_predictions/im_00015.png)</kbd> 
 
-<kbd>![til](./gifs/im_00020.gif)</kbd> 
-<kbd>![alt text](./demo_image_predictions/im_00020.png)</kbd> 
-
 Just ellipse:
 
 <kbd>![til](./gifs/im_00003.gif)</kbd> 
