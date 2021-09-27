@@ -20,8 +20,8 @@ Some results visualized are as follows. The training set consisted of 59000 imag
 
 Empty image:
 
-<kbd>![til](./gifs/im_00014.gif)</kbd>
-<kbd>![alt text](./demo_image_predictions/im_00014.png)</kbd>
+<kbd>![til](./gifs/im_00003.gif)</kbd>
+<kbd>![alt text](./demo_image_predictions/im_00003.png)</kbd>
 
 Rectangle and ellipse:
 
@@ -31,13 +31,24 @@ Rectangle and ellipse:
 <kbd>![til](./gifs/im_00006.gif)</kbd> 
 <kbd>![alt text](./demo_image_predictions/im_00006.png)</kbd> 
 
-<kbd>![til](./gifs/im_00013.gif)</kbd> 
-<kbd>![alt text](./demo_image_predictions/im_00013.png)</kbd> 
+<kbd>![til](./gifs/im_00007.gif)</kbd> 
+<kbd>![alt text](./demo_image_predictions/im_00007.png)</kbd> 
 
-<kbd>![til](./gifs/im_00019.gif)</kbd> 
-<kbd>![alt text](./demo_image_predictions/im_00019.png)</kbd> 
+<kbd>![til](./gifs/im_00014.gif)</kbd> 
+<kbd>![alt text](./demo_image_predictions/im_00014.png)</kbd> 
 
 Just rectangle:
+
+<kbd>![til](./gifs/im_00002.gif)</kbd> 
+<kbd>![alt text](./demo_image_predictions/im_00002.png)</kbd> 
+
+<kbd>![til](./gifs/im_00008.gif)</kbd> 
+<kbd>![alt text](./demo_image_predictions/im_00008.png)</kbd> 
+
+<kbd>![til](./gifs/im_00017.gif)</kbd> 
+<kbd>![alt text](./demo_image_predictions/im_00017.png)</kbd> 
+
+Just ellipse:
 
 <kbd>![til](./gifs/im_00000.gif)</kbd> 
 <kbd>![alt text](./demo_image_predictions/im_00000.png)</kbd> 
@@ -45,31 +56,8 @@ Just rectangle:
 <kbd>![til](./gifs/im_00001.gif)</kbd> 
 <kbd>![alt text](./demo_image_predictions/im_00001.png)</kbd> 
 
-<kbd>![til](./gifs/im_00002.gif)</kbd> 
-<kbd>![alt text](./demo_image_predictions/im_00002.png)</kbd> 
-
-<kbd>![til](./gifs/im_00005.gif)</kbd> 
-<kbd>![alt text](./demo_image_predictions/im_00005.png)</kbd> 
-
-<kbd>![til](./gifs/im_00008.gif)</kbd> 
-<kbd>![alt text](./demo_image_predictions/im_00008.png)</kbd> 
-
-<kbd>![til](./gifs/im_00010.gif)</kbd> 
-<kbd>![alt text](./demo_image_predictions/im_00010.png)</kbd> 
-
-<kbd>![til](./gifs/im_00012.gif)</kbd> 
-<kbd>![alt text](./demo_image_predictions/im_00012.png)</kbd> 
-
-<kbd>![til](./gifs/im_00015.gif)</kbd> 
-<kbd>![alt text](./demo_image_predictions/im_00015.png)</kbd> 
-
-Just ellipse:
-
-<kbd>![til](./gifs/im_00003.gif)</kbd> 
-<kbd>![alt text](./demo_image_predictions/im_00003.png)</kbd> 
-
-<kbd>![til](./gifs/im_00007.gif)</kbd> 
-<kbd>![alt text](./demo_image_predictions/im_00007.png)</kbd> 
+<kbd>![til](./gifs/im_00009.gif)</kbd> 
+<kbd>![alt text](./demo_image_predictions/im_00009.png)</kbd> 
 
 
 Evolution of the latent space on the test set:
@@ -77,12 +65,6 @@ Evolution of the latent space on the test set:
 <kbd>![til](./gifs/latent_space_plot.gif)</kbd> 
 <kbd>![alt text](./latent_space_plot.png)</kbd> 
 
-
-Lessons learned from this project:
-
-  * CVAEs will completely ignore the input labels if the dimensionality of the latent space is too high. I initially tried -- and became very, very frustrated by -- this fact when I set the latent space (n_z in the script) to really high dimensions, like 256 or even 64. It turns out that setting it to 2 did the trick. To be honest I didn't really understand variational autoencoders, or the idea of the latent space, before trying this, and it made little sense to me that 2 dimensions was all that was really needed to get it to work halfway decently.
-  * The CVAE is pretty effective at removing green rectangles, but what it replaces them with is anyone's guess. I would like it to replace it with a white background, but I think the network assumed that a red ellipse could just be hiding behind it instead. This is mitigated a little bit when labels about the red ellipses is included, but if you think about it, the idea that green rectangles are just blocking red ellipses is a legitimate assumption by the network either way. The code as it is is designed to place green rectangles in front of red ellipses. It's an interesting effect to observe. This issue can also be seen in the latent space plot: the purple dots, which represent removed rectangles, are nearer to their counterparts than they are to the white image, which is represented by the brown cluster. Ideally, there should be a way to push the purple dots closer to the brown cluster, but I can't really think of a way to force the model to do that.
-  * The latent space evolves to look like a rotated square, with certain dots clustered very close to one another. This is interesting. I think it uses the space to create its own coordinate system.
 
 See also:
   * https://wiseodd.github.io/techblog/2016/12/17/conditional-vae/
