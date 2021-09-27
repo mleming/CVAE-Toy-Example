@@ -21,58 +21,58 @@ Some results visualized are as follows. The training set consisted of 59000 imag
 Empty image:
 
 <kbd>![til](./gifs/im_00014.gif)</kbd>
-<kbd>![alt text](./image_predictions/im_00014.png)</kbd>
+<kbd>![alt text](./demo_image_predictions/im_00014.png)</kbd>
 
 Rectangle and ellipse:
 
 <kbd>![til](./gifs/im_00004.gif)</kbd> 
-<kbd>![alt text](./image_predictions/im_00004.png)</kbd> 
+<kbd>![alt text](./demo_image_predictions/im_00004.png)</kbd> 
 
 <kbd>![til](./gifs/im_00006.gif)</kbd> 
-<kbd>![alt text](./image_predictions/im_00006.png)</kbd> 
+<kbd>![alt text](./demo_image_predictions/im_00006.png)</kbd> 
 
 <kbd>![til](./gifs/im_00013.gif)</kbd> 
-<kbd>![alt text](./image_predictions/im_00013.png)</kbd> 
+<kbd>![alt text](./demo_image_predictions/im_00013.png)</kbd> 
 
 <kbd>![til](./gifs/im_00019.gif)</kbd> 
-<kbd>![alt text](./image_predictions/im_00019.png)</kbd> 
+<kbd>![alt text](./demo_image_predictions/im_00019.png)</kbd> 
 
 Just rectangle:
 
 <kbd>![til](./gifs/im_00000.gif)</kbd> 
-<kbd>![alt text](./image_predictions/im_00000.png)</kbd> 
+<kbd>![alt text](./demo_image_predictions/im_00000.png)</kbd> 
 
 <kbd>![til](./gifs/im_00001.gif)</kbd> 
-<kbd>![alt text](./image_predictions/im_00001.png)</kbd> 
+<kbd>![alt text](./demo_image_predictions/im_00001.png)</kbd> 
 
 <kbd>![til](./gifs/im_00002.gif)</kbd> 
-<kbd>![alt text](./image_predictions/im_00002.png)</kbd> 
+<kbd>![alt text](./demo_image_predictions/im_00002.png)</kbd> 
 
 <kbd>![til](./gifs/im_00005.gif)</kbd> 
-<kbd>![alt text](./image_predictions/im_00005.png)</kbd> 
+<kbd>![alt text](./demo_image_predictions/im_00005.png)</kbd> 
 
 <kbd>![til](./gifs/im_00008.gif)</kbd> 
-<kbd>![alt text](./image_predictions/im_00008.png)</kbd> 
+<kbd>![alt text](./demo_image_predictions/im_00008.png)</kbd> 
 
 <kbd>![til](./gifs/im_00010.gif)</kbd> 
-<kbd>![alt text](./image_predictions/im_00010.png)</kbd> 
+<kbd>![alt text](./demo_image_predictions/im_00010.png)</kbd> 
 
 <kbd>![til](./gifs/im_00012.gif)</kbd> 
-<kbd>![alt text](./image_predictions/im_00012.png)</kbd> 
+<kbd>![alt text](./demo_image_predictions/im_00012.png)</kbd> 
 
 <kbd>![til](./gifs/im_00015.gif)</kbd> 
-<kbd>![alt text](./image_predictions/im_00015.png)</kbd> 
+<kbd>![alt text](./demo_image_predictions/im_00015.png)</kbd> 
 
 <kbd>![til](./gifs/im_00020.gif)</kbd> 
-<kbd>![alt text](./image_predictions/im_00020.png)</kbd> 
+<kbd>![alt text](./demo_image_predictions/im_00020.png)</kbd> 
 
 Just ellipse:
 
 <kbd>![til](./gifs/im_00003.gif)</kbd> 
-<kbd>![alt text](./image_predictions/im_00003.png)</kbd> 
+<kbd>![alt text](./demo_image_predictions/im_00003.png)</kbd> 
 
 <kbd>![til](./gifs/im_00007.gif)</kbd> 
-<kbd>![alt text](./image_predictions/im_00007.png)</kbd> 
+<kbd>![alt text](./demo_image_predictions/im_00007.png)</kbd> 
 
 
 Evolution of the latent space on the test set:
