@@ -421,8 +421,9 @@ while j < max_epochs:
 		combined_model.fit([X_train,C_train],
 			np.ones((X_train.shape[0],)),epochs=1,verbose=verbose)
 	c_loss = np.mean(c_his.history["loss"])
+	if np.isnan(c_loss):break
 	if verbose: print("%d: C: %.6f" % (j,c_loss))
-	if j % 20 == 0 or c_loss <= loss_lim:
+	if j % 10 == 0 or c_loss <= loss_lim:
 		if verbose: print("Saving")
 		if check_for_save_and_load_model:
 			#m.save(model_file)
