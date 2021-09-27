@@ -60,8 +60,9 @@ max_epochs = 40000
 # "div" is the number of images in the test set, with the remainder going into
 # the training set. "num_random" is just the total number of images generated
 # Note that 1/4 of them will be the same blank white image.
-num_random_images = 10000
+num_random_images = 60000
 div = 1000
+optimizer = "nadam"
 assert(div < num_random_images)
 
 # Custom layer function for sampling in the variational autoencoder
@@ -100,7 +101,7 @@ pd_path = os.path.join(working_dir,"data_pd.pkl")
 # Images that will be compiled into gifs as training goes. This just selects
 # the first 20 images and the latent space plot
 gif_list = [os.path.join(image_prediction_folder,
-			"im_%.4d.png"%i) for i in range(20)]
+			"im_%.5d.png"%i) for i in range(20)]
 if plot_latent_space: gif_list.append(latent_space_plot)
 
 # This function constructs gifs out of particular images as they're saved
@@ -144,7 +145,7 @@ else:
 	maxw,maxh = int(dim[0]/3),int(dim[1]/3)
 	data_list = {}
 	for i in range(num_random_images):
-		imtitle = "im_%.4d" % i
+		imtitle = "im_%.5d" % i
 		savepath = os.path.join(image_folder,"%s.png" % imtitle)
 		im = Image.new('RGB', dim, (255,255,255))
 		draw = ImageDraw.Draw(im)
@@ -275,11 +276,11 @@ decoded = Activation('sigmoid')(x)
 
 # Main model
 m = Model(inputs = (input_img,input_conf),outputs = decoded)
-m.compile(loss='binary_crossentropy',optimizer='adam')
+m.compile(loss='binary_crossentropy',optimizer=optimizer)
 
 # Used to vizualize the first two dimensions of the latent space
 encoder = Model(inputs = (input_img,input_conf),outputs=samp)
-encoder.compile(loss=vae_loss(l_sigma,mu),optimizer='adam')
+encoder.compile(loss=vae_loss(l_sigma,mu),optimizer=optimizer)
 
 start_new_gif = True
 j = 0
@@ -296,7 +297,7 @@ while j < max_epochs:
 				batch_size=batch_size)
 	c_loss = np.mean(c_his.history["loss"])
 	if verbose: print("%d: C: %.6f" % (j,c_loss))
-	if j % 100 == 0 or c_loss <= loss_lim:
+	if j % 20 == 0 or c_loss <= loss_lim:
 		if verbose: print("Saving")
 		if check_for_save_and_load_model:
 			m.save(model_file)
@@ -305,7 +306,7 @@ while j < max_epochs:
 		X_test_pred = m.predict([X_test,C_test])
 		X_test_pred_switch = m.predict([X_test,C_switch_test])
 		for i in range(X_test_pred.shape[0]):
-			savefile = os.path.join(image_prediction_folder,"im_%.4d.png" % i)
+			savefile = os.path.join(image_prediction_folder,"im_%.5d.png" % i)
 			im_orig = np.squeeze(X_test[i,:,:,:])
 			im = np.squeeze(X_test_pred[i,:,:,:])
 			im2 = np.squeeze(X_test_pred_switch[i,:,:,:])
